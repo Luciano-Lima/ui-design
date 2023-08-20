@@ -39,7 +39,7 @@ body, html {
   font-weight: 800;
   padding: 0 10px;
   opacity: 1.2;
-  text-transform: none;
+  text-transform: capitalize;
   font-family: 'Source Code Pro', monospace;
   font-weight: 800;
   font-size: 16px;
@@ -57,8 +57,95 @@ body, html {
   background-color: #ffffff;
   position: absolute;
   margin: -58px 0;
+  border-radius: 40px 40px 0px 0px;
   border: 1px solid #0000001A;
   color: #462681;
   box-shadow: 0px 0px 10px #0000001A;
+  padding: 0 25px;
+}
+
+#card h1 {
+  font-size: 38px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header__plus {
+  display: flex;
+  align-items: center;
+  font-size: .9rem;
+  position: absolute;
+  top: 70px;
+}
+
+.header__plus span {
+  position: relative;
+  top: -5px;
+}
+
+.header__plus a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-evenly;
+  margin: -5px;
+}
+
+.statistics__item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.statistics__count {
+  font-size: 24px;
+  font-weight: 900;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.statistics p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 0px;
+}
+
+#categories {
+  margin-top: 20px;
+}
+
+#categories header {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+#categories ul {
+  margin-left: -40px;
+}
+
+#categories li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Nunito', sans-serif;
+  font-weight: lighter;
+  margin: 20px auto;
 }
 /*# sourceMappingURL=style.css.map */
